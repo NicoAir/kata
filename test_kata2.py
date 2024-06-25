@@ -5,3 +5,6 @@ def testAddZero():
 
 def testAddOne():
     assert add("1") == 1
+
+def testAddTwo():
+    assert add("1,2") == 3
