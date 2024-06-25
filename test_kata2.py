@@ -8,3 +8,6 @@ def testAddOne():
 
 def testAddTwo():
     assert add("1,2") == 3
+
+def testAddThree():
+    assert add("1,2,3") == 6
