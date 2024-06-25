@@ -11,3 +11,4 @@ def testAddTwo():
 
 def testAddThree():
     assert add("1,2,3") == 6
+    assert add("1,2\n3") == 6
