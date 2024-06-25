@@ -13,6 +13,6 @@ def add(numbers: str) -> int:
     numbers_list = [char if element == '' else char for element in numbers_list for char in (list(element) if element != '' else [''])] 
     for num in numbers_list:
         if not num.isdigit():
-                position = numbers.find(num)
-                raise ValueError(f"'{delimiter}' expected but '{num}' found at position {position}.")
+            position = numbers.find(num)
+            raise ValueError(f"'{delimiter}' expected but '{num}' found at position {position}.")
     return sum(int(num) for num in numbers_list if num.isdigit())
