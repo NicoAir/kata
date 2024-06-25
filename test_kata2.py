@@ -25,3 +25,4 @@ def testAddNoTail():
 def testAddCustomDelimiter():
     assert add("//;\n1;3") == 4
     assert add("//|\n1|2|3") == 6
+    assert add("//sep\n2sep5") == 7
