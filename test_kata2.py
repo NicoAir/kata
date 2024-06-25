@@ -21,3 +21,6 @@ def testAddBadSeparation():
 def testAddNoTail():
     with raises(ValueError):
         add("1,2,")
+
+def testAddCustomDelimiter():
+    assert add("//;\n1;3") == 4
