@@ -17,3 +17,7 @@ def testAddThree():
 def testAddBadSeparation():
     with raises(ValueError):
         add("2,\n3")
+
+def testAddNoTail():
+    with raises(ValueError):
+        add("1,2,")
